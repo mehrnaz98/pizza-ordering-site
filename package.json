@@ -1,0 +1,14 @@
+{
+  "name": "sim-company",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss starter/css/style.css -w"
+  },
+  "author": "Mehrnaz Eftekhari",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

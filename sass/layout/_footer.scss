@@ -1,0 +1,102 @@
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 3rem;
+  font-weight: 500;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    @include respond-to(tablet) {
+      font-size: 1rem;
+      padding-left: 1rem;
+    }
+
+    li a {
+      color: $white-color;
+      padding: 2rem;
+    }
+  }
+  &__policy {
+    border-right: 1px solid $white-color;
+    &--title {
+      padding-bottom: 2rem;
+      text-align: left;
+      @include respond-to(tablet) {
+        padding-left: 5rem;
+      }
+    }
+    &--paragraph {
+      line-height: 3rem;
+      text-align: left;
+      text-align: justify;
+      padding-right: 5rem;
+      @include respond-to(tablet) {
+        padding-left: 5rem;
+      }
+    }
+  }
+
+  &__address {
+    &--title {
+      text-transform: capitalize;
+      padding-bottom: 3rem;
+      text-align: center;
+      @include respond-to(tablet) {
+        position: relative;
+        left: 54px;
+      }
+      @include respond-to(tablet) {
+        position: relative;
+        left: 7px;
+      }
+    }
+
+    &--map {
+      @include respond-to(tablet) {
+        position: relative;
+        left: 48px;
+        width: 400px;
+      }
+      @include respond-to(phone) {
+        position: relative;
+        left: 6px;
+        width: 200px;
+      }
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: -4630px;
+    left: 40%;
+    @include respond-to(tablet) {
+      bottom: -792rem;
+      font-size: 10px;
+      left: 35%;
+    }
+    @include respond-to(phone) {
+      bottom: -857rem;
+      font-size: 10px;
+      left: 10%;
+    }
+  }
+  @include respond-to(tablet) {
+    padding: 5rem 1rem;
+
+    &__nav {
+      font-size: 1.5rem;
+    }
+
+    &__policy {
+      border-right: 0;
+      border-bottom: 1px solid $white-color;
+      &--paragraph {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

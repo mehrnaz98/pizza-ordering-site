@@ -1,0 +1,58 @@
+.header {
+  &__title {
+    position: absolute;
+    top: 4.2rem;
+    left: 40%;
+    font-size: 35px;
+
+    &--text1 {
+      text-align: left;
+      display: block;
+      font-size: 2.3rem;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 2rem;
+      text-transform: capitalize;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      animation-name: fadeInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
+
+    &--text2 {
+      text-align: left;
+      display: block;
+      font-size: 2.3rem;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 2rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      animation-name: fadeInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
+    @include respond-to(phone) {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__images {
+    &--pizza-1 {
+      display: flex;
+      float: left;
+      margin-left: 100px;
+      border-radius: 3%;
+      box-shadow: gray 2px 2px 2px;
+    }
+
+    @include respond-to(tablet) {
+      &--pizza-1 {
+        height: 200px;
+        left: 20%;
+        top: 32%;
+      }
+    }
+  }
+}

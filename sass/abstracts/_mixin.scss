@@ -1,0 +1,43 @@
+@mixin clearfix {
+  .row {
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  }
+}
+
+/* media queries */
+
+/*
+    breakpoints for devices
+
+    0 - 600px       ---->   Mobile
+    600px - 900px   ---->   Tablets
+    900px - 1200px  ---->   Desktop
+    1200px +        ---->   Bigger screens + infinite
+
+*/
+
+// 16px = 1em
+
+@mixin respond-to($size) {
+  @if $size == phone {
+    @media only screen and (max-width: 37.55em) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  } @else if $size == tablet-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  } @else if $size == bigger-screens {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

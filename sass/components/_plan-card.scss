@@ -1,0 +1,160 @@
+.plan-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 50rem;
+  position: relative;
+
+  &__view {
+    transition: all 0.8s ease-in-out;
+    height: 50rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 7px;
+    box-shadow: 0px 1.5px 3px 2px rgba($black-color, 0.32);
+    overflow: hidden;
+
+    &--front {
+      background-color: white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      overflow: hidden;
+
+      &-1 {
+        background-image: linear-gradient(
+          to top left,
+          $color-purple-dark,
+          $color-purple-light
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to top left,
+          $color-orange-dark,
+          $color-orange-light
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to top left,
+          $color-green-dark,
+          $color-green-light
+        );
+      }
+    }
+  }
+
+  &:hover &__view--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__view--back {
+    transform: rotateY(0);
+  }
+
+  /* front style */
+
+  &__picture {
+    height: 23rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 90%, 63% 90%, 34% 100%, 0 100%, 0 0);
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($primary-color, 0.2),
+          rgba($primary-color, 0.2)
+        ),
+        url("../../starter/img/Purple_SIM.png");
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($primary-color, 0.2),
+          rgba($primary-color, 0.2)
+        ),
+        url("../../starter/img/blue_SIM.png");
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($primary-color, 0.2),
+          rgba($primary-color, 0.2)
+        ),
+        url("../../starter/img/pink_SIM.png");
+    }
+  }
+  &__title {
+    background-color: rgba($color-purple-dark, 0.7);
+    color: $white-color;
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    transform: rotate3d(1, 0, 6, -54deg);
+  }
+  &__details {
+    padding-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    font-weight: 500;
+  }
+
+  /* back styles */
+
+  &--deals {
+    font-size: 1.8rem;
+    color: $white-color;
+    padding: 3rem;
+    line-height: 3.3rem;
+    font-weight: 500;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  // @include respond-to(tablet) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    &__view {
+      height: auto;
+      font-size: 2rem;
+      position: relative;
+      width: 100%;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(33% 8%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+        margin-top: -3rem;
+        border-radius: 3px;
+        box-shadow: 0px 1.5px 3px 2px rgba($black-color, 0.92);
+      }
+    }
+
+    &:hover &__view--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding-bottom: 5rem;
+    }
+
+    &--deals {
+      font-size: 1.6rem;
+      padding: 2rem;
+      position: relative;
+      left: 0%;
+      top: 0;
+      transform: translate(0, 8%);
+    }
+  }
+}
