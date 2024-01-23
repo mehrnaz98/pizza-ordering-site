@@ -7,32 +7,33 @@
   }
 
   &__card {
-    flex: 1;
     position: relative;
     transition: all 1000ms ease-in-out;
 
     &--img {
       height: 100%;
-      width: 80%;
-      transition: all 1000ms ease-in-out;
+      width: 100%;
+      transition: all 1000ms ease-in-out 0s;
+      max-width: 200px;
+      margin-right: 35px;
+      border-radius: 3%;
+      box-shadow: rgba(128, 128, 128, 0.549) 2px 2px 2px;
     }
     &--title {
       color: $black-color;
       background-color: rgba($white-color, 0.75);
-      padding: 1 0rem;
+      padding: 1rem 0rem;
       min-width: 100%;
       text-align: center;
       position: absolute;
-      bottom: -40px;
-      left: 0;
+      bottom: -57px;
+      left: -14px;
       font-size: 3rem;
       white-space: nowrap;
       transition: all 1000ms ease-in-out;
     }
     &:hover {
-      flex-grow: 2;
       .about__card--img {
-        filter: grayscale(0);
       }
       .about__card--title {
         color: $white-color;
