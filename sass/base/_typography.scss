@@ -1,17 +1,11 @@
 .heading__primary {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $primary-color,
-    $primary-color-light
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
+  display: flex;
+  text-decoration: underline;
+  color: #485f71;
+  margin-left: 100px;
   transition: all 100ms ease-in-out;
 
   &:hover {
