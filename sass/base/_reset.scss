@@ -22,7 +22,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Raleway";
+  font-family: Arial, Helvetica, sans-serif;
   padding: 3rem;
   @include respond-to(phone) {
     padding: 1rem;

@@ -30,7 +30,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Raleway";
+  font-family: Arial, Helvetica, sans-serif;
   padding: 3rem; }
   @media only screen and (max-width: 37.55em) {
     body {
@@ -613,13 +613,17 @@ body {
   text-align: center;
   font-size: 1.6rem;
   padding: 3rem;
-  font-weight: 500; }
+  font-weight: 500;
+  background: linear-gradient(to bottom, #19456b, #11698e); }
   .footer__nav {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     list-style: none;
-    font-size: 2rem;
-    padding-bottom: 3rem; }
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    padding-left: 0; }
     @media only screen and (max-width: 56.25em) {
       .footer__nav {
         font-size: 1rem;
@@ -628,9 +632,11 @@ body {
       color: #fff;
       padding: 2rem; }
   .footer__policy {
+    padding-left: 20px;
     border-right: 1px solid #fff; }
     .footer__policy--title {
       padding-bottom: 2rem;
+      text-transform: uppercase;
       text-align: left; }
       @media only screen and (max-width: 56.25em) {
         .footer__policy--title {
@@ -646,7 +652,8 @@ body {
   .footer__address--title {
     text-transform: capitalize;
     padding-bottom: 3rem;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
     @media only screen and (max-width: 56.25em) {
       .footer__address--title {
         position: relative;
@@ -667,7 +674,7 @@ body {
       width: 200px; } }
   .footer__copyright {
     position: absolute;
-    bottom: -4630px;
+    top: 2640px;
     left: 40%; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
@@ -848,7 +855,7 @@ body {
   padding: 80px 100px 450px 0px;
   background-color: #3d3d3d;
   color: white;
-  margin-top: 15rem; }
+  margin-top: 20rem; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       margin-top: 37rem;
