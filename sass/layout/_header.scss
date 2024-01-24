@@ -1,5 +1,10 @@
 .header {
   &__title {
+    background-image: linear-gradient(to right, #16c79a, #1c2b97);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
     position: absolute;
     top: 4.2rem;
     left: 40%;
