@@ -9,6 +9,7 @@
     top: 4.2rem;
     left: 40%;
     font-size: 35px;
+    text-transform: uppercase;
 
     @include respond-to(tablet) {
       left: 29%;

@@ -129,7 +129,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  text-transform: uppercase; }
 
 .twocolumntext__text--text1 {
   text-align: left;
@@ -451,7 +452,8 @@ body {
   position: absolute;
   top: 4.2rem;
   left: 40%;
-  font-size: 35px; }
+  font-size: 35px;
+  text-transform: uppercase; }
   @media only screen and (max-width: 56.25em) {
     .header__title {
       left: 29%; } }
