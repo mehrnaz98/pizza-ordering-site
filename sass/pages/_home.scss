@@ -82,8 +82,8 @@ body {
 }
 
 .footer {
+  background: linear-gradient(to bottom, #19456b, #11698e);
   padding: 80px 100px 450px 0px;
-  background-color: $gray-color-dark;
   color: white;
   margin-top: 20rem;
   @include respond-to(tablet) {

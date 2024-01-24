@@ -3,14 +3,12 @@
   font-size: 1.6rem;
   padding: 3rem;
   font-weight: 500;
-  background: linear-gradient(to bottom, #19456b, #11698e);
 
   &__nav {
     display: flex;
     justify-content: left;
     list-style: none;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 2rem;
     text-transform: uppercase;
     padding-bottom: 3rem;
     padding-left: 0;
@@ -64,13 +62,12 @@
     }
 
     &--map {
+      position: relative;
       @include respond-to(tablet) {
-        position: relative;
         left: 48px;
         width: 400px;
       }
       @include respond-to(phone) {
-        position: relative;
         left: 6px;
         width: 200px;
       }
