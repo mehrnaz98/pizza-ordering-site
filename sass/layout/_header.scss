@@ -1,6 +1,6 @@
 .header {
   &__title {
-    background-image: linear-gradient(to right, #16c79a, #1c2b97);
+    background-image: linear-gradient(to right, $color-aqua, $primary-color);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;

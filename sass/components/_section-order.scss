@@ -1,12 +1,13 @@
-.about {
+.order {
   display: flex;
   justify-content: center;
   margin: 10rem;
+  margin-top: 2rem;
   @include respond-to(phone) {
     margin: 3rem;
   }
 
-  &__card {
+  &__food {
     position: relative;
     transition: all 1000ms ease-in-out;
 
@@ -33,7 +34,7 @@
       transition: all 1000ms ease-in-out;
     }
     &:hover {
-      .about__card--title {
+      .order__food--title {
         color: $white-color;
         background-color: rgba($black-color, 0.75);
         transform: rotate(0) skew(0);
@@ -41,10 +42,10 @@
     }
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-      .about__card--img {
+      .order__food--img {
         filter: grayscale(0);
       }
-      .about__card--title {
+      .order__food--title {
         color: $white-color;
         background-color: rgba($black-color, 0.75);
         transform: rotate(0) skew(0);
@@ -54,7 +55,7 @@
 
   @include respond-to(tablet) {
     margin: 7rem;
-    &__card {
+    &__food {
       transform: skewX(10deg);
       height: 30rem;
 

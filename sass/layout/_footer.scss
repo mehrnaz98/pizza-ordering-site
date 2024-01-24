@@ -62,7 +62,10 @@
     }
 
     &--map {
+      width: 500px;
+      height: 280px;
       position: relative;
+      left: 10px;
       @include respond-to(tablet) {
         left: 48px;
         width: 400px;
@@ -76,7 +79,7 @@
 
   &__copyright {
     position: absolute;
-    top: 2300px;
+    top: 2230px;
     left: 40%;
     color: #16c79a;
     @include respond-to(tablet) {
