@@ -12,7 +12,7 @@ body {
 }
 
 .footer {
-  background: linear-gradient(to bottom, #19456b, #11698e);
+  background: linear-gradient(to bottom, $primary-color, $primary-color-light);
   padding: 80px 100px 450px 0px;
   color: white;
   margin-top: 20rem;

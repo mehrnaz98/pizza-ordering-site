@@ -13,10 +13,17 @@
       animation-name: fadeInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
-    }
 
-    @include respond-to(phone) {
-      font-size: 1.9rem;
+      @include respond-to(tablet) {
+        font-size: 1.9rem;
+        padding-right: 69px;
+      }
+
+      @include respond-to(phone) {
+        font-size: 1.9rem;
+        padding-right: 51px;
+        text-align: justify;
+      }
     }
   }
 
@@ -29,13 +36,17 @@
       border-radius: 3%;
       box-shadow: rgba(128, 128, 128, 0.549) 2px 2px 2px;
       max-width: 220px;
-    }
 
-    @include respond-to(tablet) {
-      &--pizza-1 {
+      @include respond-to(tablet) {
         height: 200px;
-        left: 20%;
-        top: 32%;
+        margin-left: 74px;
+        margin-right: 50px;
+      }
+      @include respond-to(phone) {
+        height: 140px;
+        margin-left: 74px;
+        margin-right: 50px;
+        margin-bottom: 20px;
       }
     }
   }

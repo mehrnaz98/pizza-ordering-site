@@ -12,10 +12,6 @@
     text-transform: uppercase;
     padding-bottom: 3rem;
     padding-left: 0;
-    @include respond-to(tablet) {
-      font-size: 1rem;
-      padding-left: 1rem;
-    }
 
     li a {
       color: $white-color;
@@ -24,14 +20,16 @@
   }
   &__policy {
     padding-left: 20px;
-    border-right: 1px solid $white-color;
+    /*border-right: 1px solid $white-color;*/
 
     &--title {
       padding-bottom: 2rem;
       text-transform: uppercase;
       text-align: left;
       @include respond-to(tablet) {
-        padding-left: 5rem;
+        padding-left: 17rem;
+        padding-top: 36px;
+        padding-bottom: 5px;
       }
     }
     &--paragraph {
@@ -40,7 +38,9 @@
       text-align: justify;
       padding-right: 5rem;
       @include respond-to(tablet) {
-        padding-left: 5rem;
+        padding-right: 12px;
+        padding-left: 3rem;
+        padding-bottom: 1rem;
       }
     }
   }
@@ -55,7 +55,7 @@
         position: relative;
         left: 54px;
       }
-      @include respond-to(tablet) {
+      @include respond-to(phone) {
         position: relative;
         left: 7px;
       }
@@ -67,8 +67,8 @@
       position: relative;
       left: 10px;
       @include respond-to(tablet) {
-        left: 48px;
         width: 400px;
+        left: 60px;
       }
       @include respond-to(phone) {
         left: 6px;
@@ -83,9 +83,9 @@
     left: 40%;
     color: #16c79a;
     @include respond-to(tablet) {
-      bottom: -792rem;
       font-size: 10px;
       left: 35%;
+      top: 2766px;
     }
     @include respond-to(phone) {
       bottom: -857rem;
@@ -98,11 +98,13 @@
 
     &__nav {
       font-size: 1.5rem;
+      padding-left: 12rem;
     }
 
     &__policy {
-      border-right: 0;
-      border-bottom: 1px solid $white-color;
+      padding-left: 100px;
+      /*border-right: 0;
+      border-bottom: 1px solid $white-color;*/
       &--paragraph {
         padding-bottom: 2rem;
       }

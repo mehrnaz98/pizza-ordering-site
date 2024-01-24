@@ -5,6 +5,7 @@
   margin-top: 2rem;
   @include respond-to(phone) {
     margin: 3rem;
+    display: block;
   }
 
   &__food {
@@ -43,21 +44,27 @@
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .order__food--img {
-        filter: grayscale(0);
+        margin-top: 0px;
+        margin-right: 7px;
       }
       .order__food--title {
-        color: $white-color;
-        background-color: rgba($black-color, 0.75);
-        transform: rotate(0) skew(0);
+        top: 127px;
+        left: 0;
+      }
+    }
+    @include respond-to(phone) {
+      .order__food--title {
+        top: 63px;
       }
     }
   }
 
   @include respond-to(tablet) {
     margin: 7rem;
+    margin-top: 0px;
     &__food {
-      transform: skewX(10deg);
-      height: 30rem;
+      height: 13rem;
+      padding: 5px;
 
       &--title {
         font-size: 1.8rem;
