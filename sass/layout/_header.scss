@@ -10,6 +10,10 @@
     left: 40%;
     font-size: 35px;
 
+    @include respond-to(tablet) {
+      left: 29%;
+    }
+
     &--text1 {
       text-align: left;
       display: block;
@@ -34,9 +38,19 @@
       padding-bottom: 2rem;
       font-weight: 400;
       text-transform: capitalize;
+      word-spacing: 2px;
+      letter-spacing: 1px;
       animation-name: fadeInRight;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
+    }
+    @include respond-to(tablet) {
+      &--text1 {
+        font-size: 1.8rem;
+      }
+      &--text2 {
+        font-size: 1.8rem;
+      }
     }
     @include respond-to(phone) {
       font-size: 1.9rem;
@@ -51,12 +65,13 @@
       border-radius: 3%;
       box-shadow: gray 2px 2px 2px;
     }
-
     @include respond-to(tablet) {
       &--pizza-1 {
-        height: 200px;
-        left: 20%;
-        top: 32%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3%;
+        height: 166px;
       }
     }
   }

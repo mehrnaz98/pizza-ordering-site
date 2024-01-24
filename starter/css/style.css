@@ -146,6 +146,7 @@ body {
   font-size: 2.3rem;
   padding-right: 100px;
   text-align: justify;
+  letter-spacing: 1px;
   font-weight: 400;
   animation-name: fadeInRight;
   animation-duration: 1s;
@@ -451,6 +452,9 @@ body {
   top: 4.2rem;
   left: 40%;
   font-size: 35px; }
+  @media only screen and (max-width: 56.25em) {
+    .header__title {
+      left: 29%; } }
   .header__title--text1 {
     text-align: left;
     display: block;
@@ -473,9 +477,16 @@ body {
     padding-bottom: 2rem;
     font-weight: 400;
     text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 1px;
     animation-name: fadeInRight;
     animation-duration: 1s;
     animation-timing-function: ease-in-out; }
+  @media only screen and (max-width: 56.25em) {
+    .header__title--text1 {
+      font-size: 1.8rem; }
+    .header__title--text2 {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 37.55em) {
     .header__title {
       font-size: 1.9rem; } }
@@ -489,9 +500,11 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .header__images--pizza-1 {
-    height: 200px;
-    left: 20%;
-    top: 32%; } }
+    float: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+    height: 166px; } }
 
 .row {
   max-width: 114rem;
