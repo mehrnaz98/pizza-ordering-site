@@ -33,8 +33,6 @@
       transition: all 1000ms ease-in-out;
     }
     &:hover {
-      .about__card--img {
-      }
       .about__card--title {
         color: $white-color;
         background-color: rgba($black-color, 0.75);

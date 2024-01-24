@@ -1,6 +1,11 @@
 .twocolumntext {
   &__title {
     font-size: 35px;
+    background-image: linear-gradient(to right, #16c79a, #1c2b97);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
   }
   &__text {
     &--text1 {
