@@ -677,8 +677,9 @@ body {
         width: 200px; } }
   .footer__copyright {
     position: absolute;
-    top: 2640px;
-    left: 40%; }
+    top: 2300px;
+    left: 40%;
+    color: #16c79a; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         bottom: -792rem;

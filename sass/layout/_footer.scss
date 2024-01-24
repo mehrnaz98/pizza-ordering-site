@@ -76,8 +76,9 @@
 
   &__copyright {
     position: absolute;
-    top: 2640px;
+    top: 2300px;
     left: 40%;
+    color: #16c79a;
     @include respond-to(tablet) {
       bottom: -792rem;
       font-size: 10px;
