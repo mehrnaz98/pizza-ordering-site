@@ -489,7 +489,6 @@ body {
     .footer {
       padding: 5rem 1rem; }
       .footer__nav {
-        font-size: 1px;
         padding-left: 7rem;
         margin-right: -6rem; }
         .footer__nav li a {
