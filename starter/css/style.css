@@ -145,6 +145,9 @@ body {
     .twocolumntext__title {
       left: 25%;
       font-size: 30px; } }
+  @media only screen and (max-width: 37.55em) {
+    .twocolumntext__title {
+      font-size: 2.2rem; } }
 
 .twocolumntext__text--text1 {
   text-align: left;
@@ -158,6 +161,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .twocolumntext__text--text1 {
       padding-left: 0; } }
+  @media only screen and (max-width: 37.55em) {
+    .twocolumntext__text--text1 {
+      font-size: 1.8rem; } }
 
 .twocolumntext__text--text2 {
   text-align: left;
@@ -172,10 +178,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .twocolumntext__text--text2 {
       padding-right: 0; } }
-
-@media only screen and (max-width: 37.55em) {
-  .twocolumntext__text {
-    font-size: 1.9rem; } }
+  @media only screen and (max-width: 37.55em) {
+    .twocolumntext__text--text2 {
+      font-size: 1.8rem; } }
 
 .detail__title--text {
   text-align: left;
@@ -265,7 +270,7 @@ body {
         left: 0; } }
     @media only screen and (max-width: 37.55em) {
       .order__food .order__food--title {
-        top: 63px; } }
+        top: 74px; } }
   @media only screen and (max-width: 56.25em) {
     .order {
       margin: 7rem;
@@ -450,8 +455,9 @@ body {
         left: 60px; } }
     @media only screen and (max-width: 37.55em) {
       .footer__address--map {
-        left: 6px;
-        width: 200px; } }
+        width: 200px;
+        height: 269px;
+        left: 32px; } }
   .footer__copyright {
     position: absolute;
     top: 2230px;
@@ -464,9 +470,9 @@ body {
         top: 2766px; } }
     @media only screen and (max-width: 37.55em) {
       .footer__copyright {
-        bottom: -857rem;
+        top: 3281px;
         font-size: 10px;
-        left: 10%; } }
+        left: 18%; } }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 5rem 1rem; }
@@ -479,6 +485,23 @@ body {
       border-bottom: 1px solid $white-color;*/ }
         .footer__policy--paragraph {
           padding-bottom: 2rem; } }
+  @media only screen and (max-width: 37.55em) {
+    .footer {
+      padding: 5rem 1rem; }
+      .footer__nav {
+        font-size: 1px;
+        padding-left: 7rem;
+        margin-right: -6rem; }
+        .footer__nav li a {
+          padding: 1rem; }
+      .footer__policy {
+        padding-left: 50px; }
+        .footer__policy--title {
+          padding-left: 12rem; }
+        .footer__policy--paragraph {
+          padding-bottom: 2rem; }
+      .footer__address--title {
+        left: 38px; } }
 
 .header__title {
   background-image: linear-gradient(to right, #16c79a, #19456b);

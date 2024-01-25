@@ -11,7 +11,11 @@
       left: 25%;
       font-size: 30px;
     }
+    @include respond-to(phone) {
+      font-size: 2.2rem;
+    }
   }
+
   &__text {
     &--text1 {
       text-align: left;
@@ -24,6 +28,9 @@
       animation-timing-function: ease-in-out;
       @include respond-to(tablet) {
         padding-left: 0;
+      }
+      @include respond-to(phone) {
+        font-size: 1.8rem;
       }
     }
   }
@@ -41,9 +48,9 @@
       @include respond-to(tablet) {
         padding-right: 0;
       }
-    }
-    @include respond-to(phone) {
-      font-size: 1.9rem;
+      @include respond-to(phone) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

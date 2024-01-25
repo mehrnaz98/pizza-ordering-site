@@ -71,8 +71,9 @@
         left: 60px;
       }
       @include respond-to(phone) {
-        left: 6px;
         width: 200px;
+        height: 269px;
+        left: 32px;
       }
     }
   }
@@ -88,9 +89,9 @@
       top: 2766px;
     }
     @include respond-to(phone) {
-      bottom: -857rem;
+      top: 3281px;
       font-size: 10px;
-      left: 10%;
+      left: 18%;
     }
   }
   @include respond-to(tablet) {
@@ -108,6 +109,34 @@
       &--paragraph {
         padding-bottom: 2rem;
       }
+    }
+  }
+  @include respond-to(phone) {
+    padding: 5rem 1rem;
+
+    &__nav {
+      font-size: 1px;
+      padding-left: 7rem;
+      margin-right: -6rem;
+      li a {
+        padding: 1rem;
+      }
+    }
+
+    &__policy {
+      padding-left: 50px;
+
+      &--title {
+        padding-left: 12rem;
+      }
+
+      &--paragraph {
+        padding-bottom: 2rem;
+      }
+    }
+
+    &__address--title {
+      left: 38px;
     }
   }
 }
